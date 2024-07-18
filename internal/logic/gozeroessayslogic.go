@@ -25,6 +25,7 @@ func NewGo_zero_essaysLogic(ctx context.Context, svcCtx *svc.ServiceContext) *Go
 
 func (l *Go_zero_essaysLogic) Go_zero_essays(req *types.Request) (resp *types.Response, err error) {
 	// todo: add your logic here and delete this line
-
+	resp = &types.Response{}
+	resp.Message = req.Name
 	return
 }
