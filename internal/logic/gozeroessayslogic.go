@@ -27,5 +27,6 @@ func (l *Go_zero_essaysLogic) Go_zero_essays(req *types.Request) (resp *types.Re
 	// todo: add your logic here and delete this line
 	resp = &types.Response{}
 	resp.Message = req.Name
+	l.Infof("测试打印 %s", req.Name)
 	return
 }
